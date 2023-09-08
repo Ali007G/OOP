@@ -1,0 +1,57 @@
+#include<bits/stdc++.h>
+#include<iostream>
+using namespace std;
+
+class Person {
+public:
+	string profession;
+	int age;
+	void display()
+{
+	cout << "My profession is: " << profession << endl;
+	cout << "My age is: " << age << endl;
+	walk();
+	talk();
+}
+void walk()
+{
+	cout << "I can walk." << endl;
+}
+void talk()
+{
+cout << "I can talk." << endl;
+}
+};
+// OOPTeacher class is derived from base class Person.
+class OOPTeacher : public Person
+{
+public:
+void teachOOP()
+{
+cout << "I can teach OOP." << endl << endl;
+}
+};
+// Footballer class is derived from base class Person
+class Footballer : public Person
+{
+public:
+void playFootball()
+{
+cout << "I can play Football." << endl;
+}
+};
+
+int main()
+{
+    OOPTeacher teacher;
+    teacher.profession = "Teacher";
+    teacher.age = 28;
+    teacher.display();
+    teacher.teachOOP();
+    Footballer footballer;
+    footballer.profession = "Footballer";
+    footballer.age = 19;
+    footballer.display();
+    footballer.playFootball();
+    return 0;
+}
