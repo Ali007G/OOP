@@ -1,0 +1,28 @@
+#include<bits/stdc++.h>
+#include<iostream>
+using namespace std;
+
+class Student {
+private:
+    string FirstName;
+    string LastName;
+    int id;
+    string dept;
+
+public:
+    Student()    // default constructor
+    {
+        cout<< "Constructor Called"<<endl;
+        cout<<endl;
+    }
+
+    ~Student()     //Destructor
+    {
+        cout<<"Destructor Called"<<endl;
+    }
+};
+
+int main()
+{
+    Student obj1;
+}
