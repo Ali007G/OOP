@@ -1,0 +1,31 @@
+#include<bits/stdc++.h>
+#include <iostream>
+using namespace std;
+
+class Laptop {    // Base class 1
+public:
+    void sound() {
+        cout << "Laptop is best useful for us" << endl;
+    }
+};
+
+class Dell : public Laptop {    // Base class 2
+public:
+    void sound() {
+        cout << "Dell is good laptop" << endl;
+    }
+};
+
+class Processor : public Dell {    // Derived class
+public:
+    void sound() {
+        cout << "This is Intel Core i5 Processor" << endl;
+    }
+};
+
+int main() {
+    Processor obj1;
+    obj1.sound();
+    obj1.Dell::sound();
+    obj1.Laptop::sound();
+}
