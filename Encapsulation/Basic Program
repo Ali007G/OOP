@@ -1,0 +1,41 @@
+#include<iostream>
+using namespace std;
+
+class Person {
+private:
+	string name;
+	int age;
+public:
+	Person(string a, int b) {     // parameter constructor
+	name = a;
+	age = b;
+	}
+	void setName(string a) {
+	name = a;
+	}
+	string getName() {
+	return name;
+	}
+	void setAge(int b) {
+	age = b;
+	}
+	int getAge() {
+	return age;
+	}
+};
+
+int main() {
+Person person("Ali", 20);
+
+cout << "Name: " << person.getName() << endl;
+cout << "Age: " << person.getAge() << endl;
+
+person.setName("Ali 2");
+person.setAge(25);
+
+cout << "Name: " << person.getName() << endl;
+cout << "Age: " << person.getAge() << endl;
+
+return 0;
+}
+
