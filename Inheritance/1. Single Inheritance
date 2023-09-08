@@ -1,0 +1,29 @@
+#include<bits/stdc++.h>
+#include <iostream>
+using namespace std;
+
+class Ali {     // Base Class
+public:
+    void phone()
+    {
+        cout << "This is base class" << endl;
+        cout << "Ali have a Iphone." << endl << endl;
+    }
+};
+
+class Mobile : public Ali {    // Derive Class
+public:
+    void phone()
+    {
+        cout << "This is derive class" << endl;
+        cout << "Ali have a OnePlus" << endl << endl;
+    }
+};
+
+int main()
+{
+    Mobile obj1mobile;
+    Ali obj2mobile;
+    obj1mobile.phone();
+    obj2mobile.phone();
+}
