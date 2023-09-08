@@ -1,0 +1,40 @@
+#include<bits/stdc++.h>
+#include<iostream>
+using namespace std;
+
+class Student {
+private:
+    string FirstName;
+    string LastName;
+    int id;
+    string dept;
+
+public:
+    Student()    // default constructor
+    {
+        cout<< "Student class created..."<<endl;
+        cout<<endl;
+    }
+
+    Student(string a, string b, int c, string d)   // parameter constructor
+    {
+        FirstName = a;
+        LastName = b;
+        id = c;
+        dept = d;
+        cout<<"Student name is: "<<FirstName<<LastName<<endl;
+        cout<<"Id: " << id<<endl;
+        cout<<"Department: "<< dept<<endl <<endl;
+    }
+
+    ~Student()
+    {
+        cout<<"Destructor Called"<<endl;
+    }
+};
+
+int main()
+{
+    Student obj1;
+    Student obj2("Golam", " Ali", 22, "CSE");
+}
