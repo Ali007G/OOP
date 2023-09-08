@@ -34,6 +34,9 @@ int main()
     animal.speak();   // Calls the base class Animal's speak() function
     dog.speak();      // Calls the overridden speak() function of Dog
     cat.speak();      // Calls the overridden speak() function of Cat
+    
+    //dog.speakDog();  // change the method name speakDog() in line no 14
+    //cat.speakCat();  // change the method name speakCat() in line no 22
 
     return 0;
 }
