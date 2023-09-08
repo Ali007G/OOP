@@ -1,0 +1,34 @@
+#include<iostream>
+using namespace std;
+
+class Person {
+private:
+    string name;
+public:
+    Person(string a)
+    {
+        name = a;
+    }
+    
+    friend void printPersonName(const Person &person);  // Declare the friend function
+    void setName(string a)
+    {
+        name = a;
+    }
+    string getName() {
+        return name;
+    }
+};
+// Define the friend function to print the name of a Person
+void printPersonName(const Person &person)
+{
+    cout << "Name: " << person.name << endl;
+}
+
+int main()
+{
+    Person person("Ali");
+    printPersonName(person);
+
+    return 0;
+}
