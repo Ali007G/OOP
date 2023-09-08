@@ -1,0 +1,78 @@
+/*
+
+University Army Cumilla
+|           |        | 
+|           |        | 
+|           |        | 
+|------   BAIUST  ---|
+            | 
+           Hall
+            | 
+          Student
+
+*/
+
+#include<iostream>
+using namespace std;
+
+// Base Class 1: University
+class University {
+public:
+    void universityMessage() {
+        cout << "This is University of BAIUST :D " << endl;
+    }
+};
+
+// Base Class 2: Army
+class Army {
+public:
+    void armyMessage() {
+        cout << "This is so called Army University" << endl;
+    }
+};
+
+// Base Class 3: Cumilla
+class Cumilla {
+public:
+    void cumillaMessage() {
+        cout << "This is from Cumilla" << endl;
+    }
+};
+
+// Derived Class 1: BAIUST (from University, Army, Cumilla)
+class BAIUST : public University, public Army, public Cumilla {
+public:
+    void baiustMessage() {
+        cout << "University of BAIUST, so called Army, from Cumilla " << endl;
+    }
+};
+
+// Derived Class 2: Hall (from BAIUST)
+class Hall : public BAIUST {
+public:
+    void hallMessage() {
+        cout << "Hall is just heaven" << std::endl;
+    }
+};
+
+// Derived Class 3: Student (from Hall)
+class Student : public Hall {
+public:
+    void studentMessage() {
+        cout << "This is me" << std::endl;
+    }
+};
+
+int main() 
+{
+    // Create an object of the most derived class
+    Student s;
+    s.universityMessage();
+    s.armyMessage();
+    s.cumillaMessage();
+    s.baiustMessage();
+    s.hallMessage();
+    s.studentMessage();
+
+    return 0;
+}
