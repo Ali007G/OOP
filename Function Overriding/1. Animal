@@ -1,0 +1,39 @@
+#include<iostream>
+using namespace std;
+
+class Animal {
+public:
+    void speak()
+    {
+        cout << "This is an animal." << endl;
+    }
+};
+
+class Dog : public Animal {
+public:
+    void speak()
+    {
+        cout << "Dog says Woof" << endl;
+    }
+};
+
+class Cat : public Animal {
+public:
+    void speak()
+    {
+        cout << "Cat says Meow" << endl;
+    }
+};
+
+int main()
+{
+    Animal animal;
+    Dog dog;
+    Cat cat;
+
+    animal.speak();   // Calls the base class Animal's speak() function
+    dog.speak();      // Calls the overridden speak() function of Dog
+    cat.speak();      // Calls the overridden speak() function of Cat
+
+    return 0;
+}
