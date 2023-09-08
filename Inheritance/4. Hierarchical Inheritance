@@ -1,0 +1,38 @@
+#include<bits/stdc++.h>
+#include<iostream>
+using namespace std;
+
+class Car {         // Base class
+   public:
+    void info() {
+        cout << "This is car" << endl;
+    }
+};
+
+class Toyota : public Car {     // Derived class from Car
+   public:
+    void name1() {
+        cout << "TOYOTA is old" << endl;
+    }
+};
+
+class Bmw : public Car {        // Derived class from Car
+   public:
+    void name2() {
+        cout << "BMW is latest" << endl;
+    }
+};
+
+int main() {
+    Toyota obj1;
+    cout << "Toyota Car: " << endl;
+    obj1.info();
+    obj1.name1();
+
+    Bmw obj2;
+    cout << "\nBmw Car:" << endl;
+    obj2.info();
+    obj2.name2();
+
+    return 0;
+}
