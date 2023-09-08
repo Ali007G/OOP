@@ -1,0 +1,87 @@
+#include<iostream>
+using namespace std;
+
+class Animal {
+public:
+    void speak()
+    {
+        cout << "This is an animal." << endl;
+    }
+};
+
+class Mammal {
+public:
+    void giveBirth()
+    {
+        cout << "Mammals give birth to live young." << endl;
+    }
+};
+
+class Bird {
+public:
+    void layEggs()
+    {
+        cout << "Birds lay eggs." << endl;
+    }
+};
+
+class Dog : public Animal, public Mammal {
+public:
+    void speak() {
+        cout << "Dog says Woof" << endl;
+    }
+};
+
+class Parrot : public Animal, public Bird {
+public:
+    void speak()
+    {
+        cout << "Parrot says Squawk" << endl;
+    }
+};
+
+int main() {
+    Dog dog;
+    Parrot parrot;
+
+    dog.speak();      // Calls Dog's speak()
+    dog.giveBirth();  // Calls Mammal's giveBirth()
+
+    parrot.speak();   // Calls Parrot's speak()
+    parrot.layEggs(); // Calls Bird's layEggs()
+
+    return 0;
+}
+
+
+/*
+
+    Animal      Mammal
+      ^           ^
+      |           |
+      |           |
+      +-----------+
+           |
+           |
+           |
+           v
+     Dog (inherits from Animal and Mammal)
+     /\
+    /  \
+   /    \
+  /      \
+ /        \
++----------+
+|
+|
+|
+v
+Parrot (inherits from Animal and Bird)
+   ^
+   |
+   |
+   |
+   v
+  Bird
+
+*/
