@@ -1,0 +1,47 @@
+#include<iostream>
+using namespace std;
+
+class Trinagle {
+private:
+    float base;
+    float height;
+public:
+    Trinagle()
+    {
+        cout<<"Triangle Constructor called"<<endl;
+    }
+    void setBase(float b)
+    {
+        base = b;
+    }
+    void setHeight(float h)
+    {
+        height = h;
+    }
+    float getBase()
+    {
+        return base;
+    }
+    float getHeight()
+    {
+        return height;
+    }
+
+    float area()
+    {
+        return 0.5*base*height;
+    }
+
+};
+
+int main()
+{
+    Trinagle obj1;
+    float x,y;
+    cin>>x>>y;
+    obj1.setBase(x);
+    obj1.setHeight(y);
+    cout<<"Base: "<<obj1.getBase()<<endl;
+    cout<<"Height: "<<obj1.getHeight()<<endl;
+    cout<<"Area of Triangle: "<<obj1.area()<<endl;
+}
