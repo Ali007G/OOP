@@ -1,0 +1,46 @@
+#include<iostream>
+using namespace std;
+
+class Triangle {
+private:
+    float base;
+    float height;
+public:
+    void setBase(float b)
+    {
+        base = b;
+    }
+    void setHeight(float h)
+    {
+        height = h;
+    }
+    float getBase()
+    {
+        return base;
+    }
+    float getHeight()
+    {
+        return height;
+    }
+
+    friend float calculateArea(const Triangle &triangle);  // Declare the friend function
+};
+// Define the friend function
+float calculateArea(const Triangle &triangle)
+{
+    return 0.5 * triangle.base * triangle.height;
+}
+
+int main()
+{
+    cout << "Triangle Area:" << endl;
+    Triangle obj1;
+    float x, y;
+    cin >> x >> y;
+    obj1.setBase(x);
+    obj1.setHeight(y);
+    cout << "Base: " << obj1.getBase() << endl;
+    cout << "Height: " << obj1.getHeight() << endl;
+    cout << "Area of Triangle: " << calculateArea(obj1) << endl;
+    return 0;
+}
