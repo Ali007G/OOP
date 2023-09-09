@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+// Function demonstrating "call by reference"
+void callByReference(int &x)
+{
+    x = x * 2;
+}
+
+int main()
+{
+    int num2 = 5;
+
+    cout << "Original value of num2: " << num2 << endl;
+
+    callByReference(num2); // Pass by reference
+
+    cout << "Value of num2 after call by reference: " << num2 << endl;
+
+    return 0;
+}
