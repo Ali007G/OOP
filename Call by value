@@ -1,0 +1,18 @@
+#include<iostream>
+using namespace std;
+
+// Function demonstrating "call by value"
+void callByValue(int x)
+{
+    x = x * 2;
+}
+
+int main()
+{
+    int num1 = 5;
+    cout << "Original value of num1: " << num1 << endl;
+    callByValue(num1); // Pass by value
+    cout << "Value of num1 after call by value: " << num1 << endl;
+
+    return 0;
+}
