@@ -1,0 +1,50 @@
+#include<bits/stdc++.h>
+#include <iostream>
+using namespace std;
+
+class Laptop {    // Base class 1
+protected:
+    string name;
+public:
+    void sound() {
+        cout << "Laptop is best useful for us" << endl;
+
+    }
+    void LaptopName(string a)
+    {
+        name = a;
+        cout << name <<endl;
+    }
+
+    void setName(string a)
+    {
+        name = a;
+    }
+    string getName()
+    {
+        return name;
+    }
+};
+
+class Dell : public Laptop {    // Base class 2
+public:
+    void sound() {
+        cout << "Dell is good laptop" << endl;
+    }
+};
+
+class Processor : public Dell {    // Derived class
+public:
+    void sound() {
+        cout << "This is Intel Core i5 Processor" << endl;
+    }
+};
+
+int main() {
+    Processor obj1;
+   // Laptop laptop;
+    obj1.LaptopName("New Laptop");
+    obj1.sound();
+    obj1.Dell::sound();
+    obj1.Laptop::sound();
+}
