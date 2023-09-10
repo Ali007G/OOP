@@ -1,0 +1,36 @@
+#include<iostream>
+using namespace std;
+
+class Square {
+private:
+    int a;
+public:
+    void setSide(int side)
+    {
+        a=side;
+    }
+    int getSide()
+    {
+        return a;
+    }
+
+    int getArea()
+    {
+        return a*a;
+    }
+    int getPerimeter()
+    {
+        return 4*a;
+    }
+};
+
+int main()
+{
+    Square s;
+    s.setSide(4);
+    cout<<"Side = " << s.getSide() << endl;
+    cout<<"Area = " << s.getArea() << endl;
+    cout<<"Perimeter = " << s.getPerimeter() << endl;
+
+    return 0;
+}
