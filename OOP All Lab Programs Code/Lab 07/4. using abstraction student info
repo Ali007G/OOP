@@ -1,0 +1,45 @@
+#include<iostream>
+using namespace std;
+
+class Student
+{
+public:
+    string name;
+    int id;
+    string dept;
+    float cgpa;
+    virtual void show(string a,int b,string d,float c)
+    {
+        name=a;
+        id=b;
+        dept=d;
+        cgpa=c;
+        cout<<"Students Information: \nName: "<<name<<"\tID: "<<id<<endl;
+    }
+};
+
+class Result:public Student
+{
+public:
+
+    void show(string x,int y, string d,float z)
+    {
+        name=x;
+        id=y;
+        dept=d;
+        cgpa=z;
+        cout<<"Info and Result: \nName: "<<name<<"\tID: "<<id<<"\tDept.: "<<dept<<"\tCGPA: "<<cgpa;
+    }
+};
+
+int main()
+{
+    Student *s,obj1;
+    obj1.show("Ali",1007," ",0);
+    cout<<endl;
+    Result r;
+    s=&r;
+    s->show("Ali",1007,"CSE",3.75);
+
+    return 0;
+}
