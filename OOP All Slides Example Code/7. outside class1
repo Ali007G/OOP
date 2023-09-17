@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+class quora {
+public:
+    void user1(); /// function declaration
+    void user2();
+};
+
+void quora::user1()
+{
+        cout << "Hi! I am user 1\n";
+}
+
+void quora::user2()
+{
+        cout << "Hi! I am user 2";
+}
+
+int main()
+{
+       quora guy;
+       guy.user1();
+       guy.user2();
+       
+return 0;
+}
