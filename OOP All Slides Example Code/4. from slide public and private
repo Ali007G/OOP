@@ -1,0 +1,27 @@
+#include<iostream>
+#include<bits/stdc++.h>
+using namespace std;
+
+class student {
+private:
+    int rollno;
+public:
+    int getRollno()
+    {
+        return rollno;         /// return value
+        
+    }
+    void setRollno(int i)
+    {
+         rollno=i;             /// variable assign
+    }
+};
+
+int main()
+{
+     student A;
+  //   A.rollno=1;
+   //  cout<< A.rollno;
+     A.setRollno(345);
+     cout<< A.getRollno();
+}
