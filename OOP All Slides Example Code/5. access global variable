@@ -1,0 +1,10 @@
+#include <iostream>
+using namespace std;
+
+     int a = 100; // global variable a = 100
+int main()
+{
+     int a = 200; // local variable a = 200
+     cout << a << "\n"; // print a
+     return 0;
+}
