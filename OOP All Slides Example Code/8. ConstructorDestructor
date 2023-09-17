@@ -1,0 +1,27 @@
+#include<iostream>
+using namespace std;
+class Abc {
+    int i;
+public:
+    Abc()
+    {
+        i=0;
+        cout<<"constructor"<<endl;
+    }
+    
+    ~Abc()
+    {
+        cout<<"destructor"<<endl;
+    }
+};
+
+void f()
+{
+    static Abc obj;
+}
+  
+int main()
+{
+    f();
+    cout<<"void"<<endl;
+}
