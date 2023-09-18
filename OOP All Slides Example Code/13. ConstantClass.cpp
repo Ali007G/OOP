@@ -1,5 +1,6 @@
 #include<iostream>
 using namespace std;
+
 class Something {
 public:
     int m_value;
