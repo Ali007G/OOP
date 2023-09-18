@@ -1,3 +1,5 @@
+// const
+
 #include<iostream>
 using namespace std;
 
@@ -9,7 +11,8 @@ public:
 
     int getValue() const {return m_value;}
 };
-main()
+
+int main()
 {
     Something ob1;
     ob1.setValue(5);
