@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+
+class withfriend{
+    int i;
+public:
+    friend void fun();
+};
+
+void fun()
+{
+    withfriend wf;
+    wf.i=10;
+    cout << wf.i;
+}
+main()
+{
+    fun();
+}
