@@ -1,0 +1,26 @@
+#include<iostream>
+using namespace std;
+
+class zee {
+    int i;
+    mutable int j;
+public:
+    zee()
+    {
+        i=0;
+        j=0;
+    }
+    void fool() const
+    {
+       // i++;
+        j++;
+        cout<<i<<endl;
+        cout<<j;
+    }
+};
+
+int main()
+{
+    const zee obj;
+    obj.fool();
+}
