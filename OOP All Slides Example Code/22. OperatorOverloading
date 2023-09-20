@@ -1,0 +1,24 @@
+#include<iostream>
+using namespace std;
+
+class Test
+{
+private:
+    int c=5;
+public:
+    void operator ++()
+    {
+        c=c+10;
+    }
+    void display()
+    {
+        cout<<c;
+    }
+};
+main()
+{
+    Test ob;
+    ++ob;
+    ob.display();
+
+}
