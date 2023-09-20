@@ -1,0 +1,33 @@
+#include<iostream>
+using namespace std;
+
+class demo {
+private:
+    int num;
+    char ch;
+public:
+    demo& setnum(int num)
+    {
+        this->num=num;
+        return *this;
+    }
+    demo& setch(char ch)
+    {
+        this->ch=ch;
+        return *this;
+    }
+    void displaymyvalue()
+    {
+        this->num++;
+        cout<<num<<endl;
+        cout<<ch;
+    }
+};
+
+int main()
+{
+    demo ob1;
+    ob1.setnum(100).setch('A');
+    ob1.displaymyvalue();
+    return 0;
+}
