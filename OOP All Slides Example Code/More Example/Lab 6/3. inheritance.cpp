@@ -1,13 +1,11 @@
 #include<iostream>
 using namespace std;
 
-class area
-{
+class area {
 public:
     int a,b,area;
 };
-class triangle:public area
-{
+class triangle:public area {
 public:
     void showarea()
 {
@@ -15,8 +13,7 @@ public:
     cout<<"The triangle area is = "<<area<<endl;
 }
 };
-class rectangle:public area
-{
+class rectangle:public area {
 public:
     void showarea()
 {
@@ -24,8 +21,7 @@ public:
     cout<<"The rectangle area is = "<<area<<endl;
 }
 };
-class square:public rectangle
-{
+class square:public rectangle {
 public:
     void showarea()
 {
@@ -33,6 +29,7 @@ public:
     cout<<"The square area is = "<<area<<endl;
 }
 };
+
 int main()
 {
     triangle A;
