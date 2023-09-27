@@ -1,8 +1,7 @@
 #include<iostream>
 using namespace std;
 
-class grandfather
-{
+class grandfather {
 public:
     string name;
     void showgrandfathername()
@@ -10,30 +9,28 @@ public:
     cout<<"My grandfather name is Haider Ali"<<endl;
     }
 };
-class father:public grandfather
-{
+class father:public grandfather {
 public:
     void showfathername()
 {
     cout<<"My father name is Md Nurul Islam"<<endl;
 }
 };
-class me:public father
-{
+class me:public father {
 public:
     void showmyname()
 {
     cout<<"My name is "<<name<<endl;
 }
 };
-class mysibling:public father
-{
+class mysibling:public father {
 public:
     void showmysiblingname()
  {
     cout<<"My name is "<<name<<endl;
 }
 };
+
 int main()
  {
     me obj1;
