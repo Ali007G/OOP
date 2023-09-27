@@ -1,11 +1,12 @@
 /* Shape class method to calculate area and child class named rectangle has also the same
-method to calculate area of any rectangle. Write program where Shape class is abstract
-class.*/
+   method to calculate area of any rectangle. Write program where Shape class is abstract
+   class.
+*/
+
 #include<iostream>
 using namespace std;
 
-class shape
-{
+class shape {
 public:
     int length,width,area;
     shape(int l,int w)
@@ -16,8 +17,7 @@ public:
     virtual void print_area()=0;
 };
 
-class rectangle:public shape
-{
+class rectangle:public shape {
 public:
     int area;
     rectangle(int l,int w):shape(l,w){}
