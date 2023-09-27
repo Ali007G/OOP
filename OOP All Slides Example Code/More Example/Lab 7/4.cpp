@@ -1,8 +1,7 @@
 #include<iostream>
 using namespace std;
 
-class Student
-{
+class Student {
 public:
     string name;
     int id;
@@ -18,10 +17,8 @@ public:
     }
 };
 
-class Result:public Student
-{
+class Result:public Student {
 public:
-
     void show(string x,int y, string d,float z)
     {
         name=x;
