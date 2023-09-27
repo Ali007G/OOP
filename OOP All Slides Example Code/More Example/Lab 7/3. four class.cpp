@@ -1,15 +1,12 @@
 #include<iostream>
 using namespace std;
 
- class A
-{
+class A {
 public:
     int id;
-
 };
 
- class B:virtual public A
-{
+class B:virtual public A {
 public:
     virtual void showh()
     {
@@ -17,8 +14,7 @@ public:
     }
 };
 
-class C:virtual public A
-{
+class C:virtual public A {
 public:
      virtual void showh()
     {
@@ -26,8 +22,7 @@ public:
     }
 };
 
-class D:public B,public C
-{
+class D:public B,public C {
 public:
      void showh()
     {
