@@ -6,12 +6,9 @@ class building {
     int floors;
     int rooms,door,windows;
     int area;
-
-
 };
 
-class house:public building
-{
+class house:public building {
 public:
     void print1(int n)
     {
@@ -20,8 +17,7 @@ public:
     }
 };
 
-class flat:public house
-{
+class flat:public house {
 public:
     void print2(int a,int b)
     {
