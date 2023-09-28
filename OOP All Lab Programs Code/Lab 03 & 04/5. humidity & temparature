@@ -15,6 +15,7 @@ int main()
     cout<<"Enter the temperature: ";
     cin>>temperature;
     func(humidity,temperature);
+
  return 0;
 }
 
