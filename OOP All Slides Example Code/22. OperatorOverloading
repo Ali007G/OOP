@@ -1,8 +1,7 @@
 #include<iostream>
 using namespace std;
 
-class Test
-{
+class Test {
 private:
     int c=5;
 public:
@@ -15,10 +14,10 @@ public:
         cout<<c;
     }
 };
-main()
+
+int main()
 {
     Test ob;
     ++ob;
     ob.display();
-
 }
