@@ -1,5 +1,6 @@
 #include<iostream>
 using namespace std;
+
 class Distance {
 private:
     int feet,inches;
@@ -25,6 +26,7 @@ public:
     return Distance(feet,inches);
     }
 };
+
 int main()
 {
     Distance d1(11,10),d2(-5,11);
