@@ -6,8 +6,7 @@
 #include<iostream>
 using namespace std;
 
-class student
-{
+class student {
 public:
     int id;
     student(int x)
@@ -15,7 +14,7 @@ public:
         id=x;
         cout<<"ID \n";
     }
-    ~student()
+    ~student()    // destructor
     {
         cout<<"ID "<<id<<"\n";
     }
