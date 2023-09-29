@@ -21,6 +21,7 @@ public:
          cout<<"BAIUST.."<< n <<" "<<i<<" "<<p<<" " <<a <<" \n";
     }
 };
+
  int main()
  {
      uni ob1(" \nKAFI", 1015,162363,"Bakhrabad_Cumilla");
