@@ -2,7 +2,6 @@
 using namespace std;
 
 class Something {
-
 public:
     int m_value;
     Something()
@@ -25,5 +24,6 @@ int main()
     cout<<something.m_value;
    // something.m_value=5;
    // something.setvalue(5);
+    
     return 0;
 }
