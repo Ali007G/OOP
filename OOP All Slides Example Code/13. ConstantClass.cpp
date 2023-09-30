@@ -2,6 +2,7 @@
 using namespace std;
 
 class Something {
+
 public:
     int m_value;
     Something()
