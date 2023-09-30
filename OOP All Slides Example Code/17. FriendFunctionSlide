@@ -4,7 +4,7 @@ using namespace std;
 class withfriend{
     int i;
 public:
-    friend void fun();
+    friend void fun();   // friend function
 };
 
 void fun()
@@ -13,7 +13,7 @@ void fun()
     wf.i=10;
     cout << wf.i;
 }
-main()
+int main()
 {
     fun();
 }
