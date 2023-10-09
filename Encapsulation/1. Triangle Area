@@ -6,7 +6,7 @@ private:
     float base;
     float height;
 public:
-    Trinagle()
+    Trinagle()    // default constructor
     {
         cout<<"Triangle Constructor called"<<endl;
     }
